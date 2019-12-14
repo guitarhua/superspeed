@@ -51,19 +51,7 @@ echo "    使用方法:      bash <(curl -Lso- https://git.io/superspeed)"
 echo "    查看全部节点:  https://git.io/superspeedList"
 echo "    节点更新日期:  2019/07/02"
 echo "———————————————————————————————————————————————————————————————————"
-echo "是否进行全面测速?  (失效的测速节点会自动跳过)"
-echo -ne "    1. 确认测速    2. 取消测速"
 
-while :; do echo
-		read -p "请输入数字选择: " telecom
-		if [[ ! $telecom =~ ^[1-2]$ ]]; then
-				echo "输入错误, 请输入正确的数字!"
-		else
-				break   
-		fi
-done
-
-[[ ${telecom} == 2 ]] && exit 1
 
 # install speedtest
 if  [ ! -e '/tmp/speedtest.py' ]; then
