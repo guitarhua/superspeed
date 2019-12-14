@@ -47,7 +47,7 @@ fi
 clear
 
 echo "———————————————————————SuperSpeed 全面测速版———————————————————————"
-echo "    使用方法:      wget -qO- git.io/superspeed.sh | bash
+echo "    使用方法:      wget -qO- git.io/superspeed.sh | bash"
 echo "    查看全部节点:  https://git.io/superspeedList"
 echo "    节点更新日期:  2019/07/02"
 echo "———————————————————————————————————————————————————————————————————"
