@@ -50,7 +50,7 @@ echo "———————————————————————Super
 echo "    使用方法:      wget -qO- git.io/superspeed.sh | bash"
 echo "    查看全部节点:  https://git.io/superspeedList"
 echo "    节点更新日期:  2019/12/23"
-echo "———————————————————————————————————————————————————————————————————"
+echo "—————————————————————————————————————————————————————————————————————————————————"
 
 
 # install speedtest
@@ -74,14 +74,14 @@ speed_test(){
 		local nodeLocation=$2
 		local nodeISP=$3
 
-		printf "${RED}%-8s${YELLOW}%-10s${GREEN}%-10s${CYAN}%-16s${BLUE}%-16s${PURPLE}%-10s${PLAIN}\n" "${nodeID}  " "${nodeISP}  " "${nodeLocation}  " "${reupload}  " "${REDownload}  " "${relatency}"
+		printf "${RED}%-8s${YELLOW}%-10s${GREEN}%-24s${CYAN}%-16s${BLUE}%-16s${PURPLE}%-10s${PLAIN}\n" "${nodeID}  " "${nodeISP}  " "${nodeLocation}  " "${reupload}  " "${REDownload}  " "${relatency}"
 	else
 		local cerror="ERROR"
 	fi
 }
 
 if [[ 1 == 1 ]]; then
-	echo "———————————————————————————————————————————————————————————————————"
+	echo "—————————————————————————————————————————————————————————————————————————————————"
 	printf "%-8s%-10s%-10s%-16s%-16s%-10s\n" "节点ID  " "运营商  " "位置     " "上传速度        " "下载速度        " "延迟"
 	start=$(date +%s) 
 	speed_test '3633' '上海' '电信'
@@ -268,7 +268,7 @@ if [[ 1 == 1 ]]; then
 
 	end=$(date +%s)  
 	rm -rf /tmp/speedtest.py
-	echo "———————————————————————————————————————————————————————————————————"
+	echo "—————————————————————————————————————————————————————————————————————————————————"
 	time=$(( $end - $start ))
 	if [[ $time -gt 60 ]]; then
 		min=$(expr $time / 60)
