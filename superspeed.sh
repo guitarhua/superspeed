@@ -82,7 +82,7 @@ speed_test(){
 		
 		LANG=C
 		#echo $LANG
-		printf "${RED}%-6s${YELLOW}%s%s${GREEN}%-24s${CYAN}%-16s${BLUE}%-16s${PURPLE}%-10s${PLAIN}\n" "${nodeID}"  "${nodeISP}" "|" "${strnodeLocation:0:24}" "${reupload}" "${REDownload}" "${relatency}"
+		printf "${RED}%-6s${YELLOW}%s%s${GREEN}%-24s${CYAN}%-16s${CYAN}%-16s${PURPLE}%-10s${PLAIN}\n" "${nodeID}"  "${nodeISP}" "|" "${strnodeLocation:0:24}" "${reupload}" "${REDownload}" "${relatency}"
 		
 	else
 		local cerror="ERROR"
